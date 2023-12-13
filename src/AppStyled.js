@@ -1,7 +1,19 @@
 import styled from "styled-components";
 
-export const ContainerStyled = styled.div``;
+export const ContainerStyled = styled.div`
+  display: flex;
+  height: 100vh;
+  background-color: red;
+`;
 
-export const Menu = styled.div``;
+export const Menu = styled.div`
+  display: flex;
+  background-color: green;
+  width: 80px;
+`;
 
-export const Pagebody = styled.div``;
+export const Pagebody = styled.div`
+  display: flex;
+  background-color: blue;
+  flex: 1;
+`;

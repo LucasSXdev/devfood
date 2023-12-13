@@ -1,16 +1,15 @@
 import HomeScreen from "./pages/HomeScreen";
-import { containerStyled } from "./appStyled";
+import { ContainerStyled, Menu, Pagebody } from "./appStyled";
 import { useSelector } from "react-redux";
-import { userSlice } from "./redux/user/slice";
+import rootReducer from "./redux/rootReducer";
 
 export default function App() {
-  const name = useSelector((userSlice) => userSlice.user.name);
+  const { user } = useSelector((rootReducer) => rootReducer.user);
   return (
     <>
       <ContainerStyled>
         <Menu></Menu>
         <Pagebody></Pagebody>
-        <Cart></Cart>
       </ContainerStyled>
       <HomeScreen />
     </>
