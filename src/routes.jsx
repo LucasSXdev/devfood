@@ -1,23 +1,32 @@
 import { createBrowserRouter } from "react-router-dom";
-import { HomeScreen, Tela2Screen } from "./pages";
-import Order from "./components/Order";
-import Profile from "./components/profile";
+import HomeScreen from "./pages/HomeScreen";
+import Tela2Screen from "./pages/Tela2Screen";
+import Order from "./pages/Order";
+import Profile from "./pages/Profile";
+import RootLayout from "./pages/rootLayout/Rootlayout";
 
 const route = createBrowserRouter([
   {
     path: "/",
-    element: <HomeScreen />,
-  },
-  {
-    path: "/orders",
-    element: <Order />,
-  },
-  {
-    path: "/profile",
-    element: <Profile />,
+    element: <RootLayout />,
+    children: [
+      {
+        index: true,
+        element: <HomeScreen />,
+      },
+      {
+        path: "order",
+        element: <Order />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
+      },
+    ],
   },
   {
     path: "/tela2/:none",
     element: <Tela2Screen />,
   },
 ]);
+export default route;

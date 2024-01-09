@@ -6,6 +6,9 @@ import { MdDeliveryDining } from "react-icons/md";
 import { FaStore } from "react-icons/fa";
 import { ImProfile } from "react-icons/im";
 import MenuItem from "./components/MenuItem";
+import Profile from "./pages/Profile";
+import Order from "./pages/Order";
+import RootLayout from "./pages/rootLayout/Rootlayout";
 
 export default function App() {
   const { user } = useSelector((rootReducer) => rootReducer.user);
@@ -14,12 +17,10 @@ export default function App() {
       <ContainerStyled>
         <Menu>
           <MenuItem icon={<MdDeliveryDining />} link="/" />
-          <MenuItem icon={<FaStore />} link="/orders" />
+          <MenuItem icon={<FaStore />} link="/order" />
           <MenuItem icon={<ImProfile />} link="/profile" />
         </Menu>
-        <Pagebody>
-          <HomeScreen />
-        </Pagebody>
+        <RootLayout />
       </ContainerStyled>
     </>
   );
