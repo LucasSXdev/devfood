@@ -8,10 +8,6 @@ import route from "./routes.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
-    <App>
-      <>
-        <RouterProvider router={route}></RouterProvider>
-      </>
-    </App>
+    <App />
   </Provider>
 );

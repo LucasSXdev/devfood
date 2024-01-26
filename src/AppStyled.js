@@ -13,10 +13,18 @@ export const Menu = styled.div`
   justify-content: center;
   background-color: green;
   width: 80px;
-`;
 
-export const Pagebody = styled.div`
-  display: flex;
-  background-color: blue;
-  flex: 1;
+  a {
+    display: flex;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 15px;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      background: blue;
+    }
+  }
 `;

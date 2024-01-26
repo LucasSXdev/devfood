@@ -3,12 +3,12 @@ import HomeScreen from "./pages/HomeScreen";
 import Tela2Screen from "./pages/Tela2Screen";
 import Order from "./pages/Order";
 import Profile from "./pages/Profile";
-import RootLayout from "./pages/rootLayout/Rootlayout";
+import Pagebody from "./pages/pagebody/Pagebody";
 
 const route = createBrowserRouter([
   {
     path: "/",
-    element: <RootLayout />,
+    element: <Pagebody />,
     children: [
       {
         index: true,
