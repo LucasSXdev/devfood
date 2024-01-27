@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const ContainerStyled = styled.div`
   display: flex;
   height: 100vh;
-  background-color: red;
+  background-image: url("./src/assets/background-delivery.jpg");
+  background-size: cover;
 `;
 
 export const Menu = styled.div`
