@@ -17,10 +17,18 @@ export const Banner = styled.div`
 `;
 
 export const SearchBar = styled.div`
-  padding: 5px;
-  width: 40px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  width: ${(props) => (props.active ? 300 : 50)}px;
+  gap: 15px;
   background: white;
   color: #136713;
   border-radius: 10px;
+  padding: 5px;
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
 `;
