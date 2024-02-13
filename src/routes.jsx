@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import HomeScreen from "./pages/HomeScreen";
+import HomeScreen from "./pages/homescreen/HomeScreen";
 import Tela2Screen from "./pages/Tela2Screen";
 import Order from "./pages/Order";
 import Profile from "./pages/Profile";
